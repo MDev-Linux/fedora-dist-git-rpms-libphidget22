@@ -1,6 +1,6 @@
 Name:           libphidget22
-Version:        1.10.20220530
-Release:        2%{?dist}
+Version:        1.11.20220822
+Release:        1%{?dist}
 Summary:        Drivers and API for Phidget devices
 
 # libphidget is LGPL-3.0-or-later
@@ -78,6 +78,9 @@ install -p -m 0644 plat/linux/udev/99-libphidget22.rules %{buildroot}%{_udevrule
 
 
 %changelog
+* Sun Sep 11 2022 Richard Shaw <hobbes1069@gmail.com> - 1.11.20220822-1
+- Update 1.11.20220822.
+
 * Fri Aug 12 2022 Richard Shaw <hobbes1069@gmail.com> - 1.10.20220530-2
 - Update per reviewer comments:
   Update license
