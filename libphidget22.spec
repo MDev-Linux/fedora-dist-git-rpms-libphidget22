@@ -1,6 +1,6 @@
 Name:           libphidget22
-Version:        1.19.20240304
-Release:        2%{?dist}
+Version:        1.20.20240909
+Release:        1%{?dist}
 Summary:        Drivers and API for Phidget devices
 
 # libphidget is LGPL-3.0-or-later
@@ -78,6 +78,9 @@ install -p -m 0644 plat/linux/udev/99-libphidget22.rules %{buildroot}%{_udevrule
 
 
 %changelog
+* Tue Sep 10 2024 Richard Shaw <hobbes1069@gmail.com> - 1.20.20240909-1
+- Update to 1.20.20240909.
+
 * Thu Jul 18 2024 Fedora Release Engineering <releng@fedoraproject.org> - 1.19.20240304-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_41_Mass_Rebuild
 
