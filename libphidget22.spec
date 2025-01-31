@@ -81,6 +81,12 @@ install -p -m 0644 plat/linux/udev/99-libphidget22.rules %{buildroot}%{_udevrule
 * Fri Jan 31 2025 Richard Shaw <hobbes1069@gmail.com> - 1.22.20250106-1
 - Update to 1.22.20250106.
 
+* Mon Jan 20 2025 Fedora Release Engineering <releng@fedoraproject.org> - 1.22.20241219-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_42_Mass_Rebuild
+
+* Fri Jan 17 2025 Fedora Release Engineering <releng@fedoraproject.org> - 1.22.20241219-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_42_Mass_Rebuild
+
 * Wed Jan 01 2025 Richard Shaw <hobbes1069@gmail.com> - 1.22.20241219-1
 - Update to 1.22.20241219.
 
