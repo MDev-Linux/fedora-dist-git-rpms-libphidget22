@@ -1,6 +1,6 @@
 Name:           libphidget22
-Version:        1.25.20260408
-Release:        1%{?dist}
+Version:        1.25.20260512
+Release:        %autorelease
 Summary:        Drivers and API for Phidget devices
 
 # libphidget is LGPL-3.0-or-later
@@ -28,8 +28,8 @@ Requires:       udev
 Requires:       avahi-compat-libdns_sd
 
 %description
-Phidgets are a set of "plug and play" building blocks for low cost USB 
-sensing and control from your PC.  All the USB complexity is taken care 
+Phidgets are a set of "plug and play" building blocks for low cost USB
+sensing and control from your PC.  All the USB complexity is taken care
 of by the robust libphidget API.
 
 %package        devel
@@ -43,13 +43,11 @@ developing applications that use %{name}.
 
 %prep
 %autosetup
-# These headers are supplied by the avahi-compat-libdns_sd-devel package
-# We can get rid of the bundled ones
+# Use the avahi-compat-libdns_sd-devel headers in place of the bundled ones
 rm -rf src/ext/include/avahi-*
 
 
 %build
-autoreconf -fi
 %configure --disable-silent-rules --disable-static --enable-zeroconf=avahi --disable-ldconfig --enable-jni
 %make_build
 
